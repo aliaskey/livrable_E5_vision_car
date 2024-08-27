@@ -15939,3 +15939,238 @@ ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables 
 2024-08-27 12:53:50,710 INFO [base.py:212] Scheduler has been shut down
 2024-08-27 12:53:51,237 INFO [base.py:212] Scheduler has been shut down
 >>>>>>> bca7a93cf8ff6b2e0ae51307595b6eaff397ac24
+2024-08-27 14:30:37,630 ERROR [run.py:83] Erreur lors du chargement du modèle principal: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 79, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+2024-08-27 14:30:38,145 ERROR [run.py:90] Erreur lors du chargement du modèle alternatif: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 79, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 86, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+2024-08-27 14:30:38,218 INFO [run.py:68] Modèle simple chargé avec succès.
+2024-08-27 14:30:38,219 INFO [run.py:179] Starting the Flask app
+2024-08-27 14:30:38,231 INFO [_internal.py:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2024-08-27 14:30:38,231 INFO [_internal.py:97] [33mPress CTRL+C to quit[0m
+2024-08-27 14:30:38,232 INFO [_internal.py:97]  * Restarting with stat
+2024-08-27 14:30:42,538 ERROR [run.py:83] Erreur lors du chargement du modèle principal: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 79, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+2024-08-27 14:30:43,113 ERROR [run.py:90] Erreur lors du chargement du modèle alternatif: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 79, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 86, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+2024-08-27 14:30:43,188 INFO [run.py:68] Modèle simple chargé avec succès.
+2024-08-27 14:30:43,189 INFO [run.py:179] Starting the Flask app
+2024-08-27 14:30:43,195 WARNING [_internal.py:97]  * Debugger is active!
+2024-08-27 14:30:43,196 INFO [_internal.py:97]  * Debugger PIN: 114-819-853
+2024-08-27 14:30:49,984 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:49] "GET /dashboard/ HTTP/1.1" 200 -
+2024-08-27 14:30:50,389 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:50] "[36mGET /dashboard/static/css/main.css HTTP/1.1[0m" 304 -
+2024-08-27 14:30:50,420 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:50] "[36mGET /dashboard/static/js/app.js HTTP/1.1[0m" 304 -
+2024-08-27 14:30:51,329 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:51] "[36mGET /dashboard/static/elements/menu.html HTTP/1.1[0m" 304 -
+2024-08-27 14:30:51,652 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:51] "[36mGET /dashboard/static/elements/modal.html HTTP/1.1[0m" 304 -
+2024-08-27 14:30:51,653 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:51] "[36mGET /dashboard/static/fonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2024-08-27 14:30:51,686 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:51] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+2024-08-27 14:30:51,686 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:51] "[36mGET /dashboard/static/pages/overview.html HTTP/1.1[0m" 304 -
+2024-08-27 14:30:52,586 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:52] "GET / HTTP/1.1" 200 -
+2024-08-27 14:30:52,614 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:52] "GET /static/style.css HTTP/1.1" 200 -
+2024-08-27 14:30:57,368 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:57] "GET / HTTP/1.1" 200 -
+2024-08-27 14:30:57,675 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-08-27 14:30:58,595 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:58] "GET / HTTP/1.1" 200 -
+2024-08-27 14:30:58,611 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:30:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-08-27 14:31:03,594 INFO [run.py:104] Upload request received
+2024-08-27 14:31:06,508 INFO [run.py:166] Prediction completed successfully
+2024-08-27 14:31:06,508 WARNING [run.py:170] Processing time exceeded: 2.91 seconds
+2024-08-27 14:31:06,541 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:31:06] "POST /upload HTTP/1.1" 200 -
+2024-08-27 14:31:38,059 INFO [_internal.py:97]  * Detected change in 'C:\\Users\\lemai\\01.projetSIMPLON\\vision_car_ko\\run.py', reloading
+2024-08-27 14:31:38,060 INFO [base.py:212] Scheduler has been shut down
+2024-08-27 14:31:38,589 INFO [_internal.py:97]  * Restarting with stat
+2024-08-27 14:31:43,208 ERROR [run.py:83] Erreur lors du chargement du modèle principal: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 79, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+2024-08-27 14:31:43,723 ERROR [run.py:90] Erreur lors du chargement du modèle alternatif: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 79, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\run.py", line 86, in load_complex_model
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects=custom_objects, compile=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_api.py", line 254, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 281, in load_model
+    raise e
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 269, in load_model
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 466, in _load_state
+    _load_container_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 534, in _load_container_state
+    _load_state(
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\saving\saving_lib.py", line 435, in _load_state
+    trackable.load_own_variables(weights_store.get(inner_path))
+  File "C:\Users\lemai\01.projetSIMPLON\vision_car_ko\env\Lib\site-packages\keras\src\engine\base_layer.py", line 3531, in load_own_variables
+    raise ValueError(
+ValueError: Layer 'block1_conv1' expected 2 variables, but received 0 variables during loading. Expected: ['block1_conv1/kernel:0', 'block1_conv1/bias:0']
+2024-08-27 14:31:43,796 INFO [run.py:68] Modèle simple chargé avec succès.
+2024-08-27 14:31:43,797 INFO [run.py:179] Starting the Flask app
+2024-08-27 14:31:43,804 WARNING [_internal.py:97]  * Debugger is active!
+2024-08-27 14:31:43,805 INFO [_internal.py:97]  * Debugger PIN: 114-819-853
+2024-08-27 14:31:43,960 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:31:43] "GET / HTTP/1.1" 200 -
+2024-08-27 14:31:44,018 INFO [_internal.py:97] 127.0.0.1 - - [27/Aug/2024 14:31:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-08-27 14:32:13,196 INFO [_internal.py:97]  * Detected change in 'C:\\Users\\lemai\\01.projetSIMPLON\\vision_car_ko\\run.py', reloading
+2024-08-27 14:32:13,197 INFO [base.py:212] Scheduler has been shut down
+2024-08-27 14:32:13,689 INFO [_internal.py:97]  * Restarting with stat
