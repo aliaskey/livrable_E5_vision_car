@@ -1,0 +1,4 @@
+env/Lib/site-packages/jaxlib/xla_extension.pyd filter=lfs diff=lfs merge=lfs -text
+env/Lib/site-packages/tensorflow/python/_pywrap_tensorflow_internal.pyd filter=lfs diff=lfs merge=lfs -text
+models/unet_v2.keras filter=lfs diff=lfs merge=lfs -text
+models/unet_vgg16_categorical_crossentropy_raw_data.keras filter=lfs diff=lfs merge=lfs -text
