@@ -13,6 +13,12 @@ from flask_monitoringdashboard.database import session_scope, User
 from werkzeug.security import generate_password_hash
 import time
 
+
+# Chargement de la configuration du dashboard
+dashboard.config.init_from(file='/config.cfg')
+
+dashboard.config.monitor_level = 3
+dashboard.config.enable_logging = True
 app = Flask(__name__)
 dashboard.bind(app)
 
@@ -22,6 +28,11 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s %(levelname)s [%(filename)s:%(lineno)d] %(message)s'
 )
+
+import os
+
+app.secret_key = os.urandom(24)  # Génère une clé secrète aléatoire
+
 
 # Création automatique d'un compte administrateur pour Flask Monitoring Dashboard
 admin_username = 'admin'
